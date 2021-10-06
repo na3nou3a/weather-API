@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Weather App</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+  <h1>Weather App</h1>
+  <img src="./images/weatherLogo.png" alt="logo">
+ </header>
+ <main>
+  
+  <form class="section-center" id="search-form">
+   <input class="input" type="text" name="input" spellcheck="false" placeholder="Enter City Name ex: London" required>
+   <button class="btn">Weather</button>
+  </form>
+  
+  <div class="alert-container">
+    <p class="alert"></p>
+  </div>
+
+  <div class="weather-output section-center">
+   <!-- now -->
+   <section class="now section">
+    <div class="info">
+      <h4>Weather Now</h4>
+      <p id="city"></p>
+      <p id="temp"></p>
+      <p id="wind"></p>
+      <p id="humidity"></p>
+      <div class="icon-container">
+        <p class="last" id="description"></p> 
+        <img id="wicon" width="70" height="70" src="" alt="icon">
+      </div>
+    </div>
+   </section>
+
+   <!-- forcast -->
+   <section class="forcast section">
+    <div class="info">
+     <h4>Today</h4>
+      <p id="ftemp1"></p>
+      <div class="icon-container">
+        <p class="last" id="fdescription1"></p>
+        <img id="ficon1" width="70" height="70" src="" alt="icon">
+      </div>
+     </div>
+
+    <div class="info">
+      <h4>Tomorrow</h4>
+       <p id="ftemp2"></p>
+       <div class="icon-container">
+         <p class="last" id="fdescription2"></p>
+         <img id="ficon2" src="" width="70" height="70" alt="icon">
+       </div>
+    </div>
+
+     <div class="info">
+       <h4>Next day</h4>
+        <p id="ftemp3"></p>
+        <div class="icon-container">
+          <p class="last" id="fdescription3"></p>
+          <img id="ficon3" width="70" height="70" src="" alt="icon">
+        </div>
+     </div>
+
+   </section>
+
+ </main>
+ <footer>
+ <p>&COPY;2021</p>
+</footer>
+</div>
+
+<script src="./bundle.js"></script>
+</body>
+</html>
